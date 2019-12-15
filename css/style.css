@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css?family=Handlee&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: red;
+}
+
+/* Header styling */
+.main-header {
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.main-header .fa-bars {
+  display: none;
+}
+
+.main-header .logo {
+  max-height: 55px;
+  max-width: 56px;
+}
+
+.navbar {
+  flex-grow: 2;
+  padding: 0 50px;
+  font-size: 1.1875rem;
+}
+
+.navbar ul { 
+  display: flex;
+  list-style: none;
+  justify-content: space-between;
+}
+
+.navbar li {
+  padding: 20px 10px;
+}
+
+.navbar li:hover {
+  background: red;
+  color: #fff;
+}
+
+/* Section Showcase */
+.showcase {
+  background: url("https://asset-eu.unileversolutions.com/content/dam/unilever/heart/netherlands/general_image/walls_nl_header-1382974-jpg.jpg.ulenscale.960x240.jpg");
+  height: 240px;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+.showcase h1 {
+  font-family: "Handlee";
+  font-size: 3rem;
+  text-transform: uppercase;
+  padding: 30px;
+}
+
+/* Section Ice */
+.ice {
+  background: red;
+}
+
+.ice ul {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.ice li {
+  flex: 0 0 25%;
+  /* fix om rode onderrand weg te werken */
+  display: flex;
+}
+
+.ice li img {
+  width: 100%;
+}
+
+/* Section History */
+.history {
+  background: #46a916;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+.history-image {
+  width: 50%;
+}
+
+.history-text {
+  padding: 0 0 0 30px;
+}
+
+.history-text h2{
+  font-family: "Handlee";
+  margin: 20px 0;
+  text-transform: capitalize;
+}
+
+.history-text a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+/* Section Explore */
+.explore {
+  background: #fd0;
+  color: red;
+  font-family: "Handlee";
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.explore h2 {
+  padding: 30px;
+  text-align: center;
+  font-size: 3rem;
+}
+
+.explore-pictures {
+  align-self: stretch;
+  display: flex;
+}
+
+.explore-picture {
+  position: relative;
+  flex-basis: 33.333%;
+  flex-shrink: 1;
+}
+
+.explore-picture h3 {
+  color: #fff;
+  font-size: 2rem;;
+  position: absolute;
+  width: 100%;
+  top: 45%;
+  text-align: center;
+}
+
+.explore-picture img {
+  width: 100%;
+}
+
+.explore button {
+  background: #fd0;
+  color: red;
+  font-size: 1.2rem;
+  border: 1px solid red;
+  border-radius: 35px;
+  padding: 15px;
+  margin: 30px 0 50px 0;
+}
+
+.explore button:hover {
+  background: #fe0;
+}
+
+footer {
+  background: red;
+  height: 450px;
+}
