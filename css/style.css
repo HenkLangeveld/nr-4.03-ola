@@ -1,12 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee|Roboto&display=swap');
 
-* {
+html {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
 }
 
-body {
+:root {
   font-family: "Roboto", sans-serif;
   color: red;
 }
@@ -42,10 +45,11 @@ body {
   display: flex;
   list-style: none;
   justify-content: space-between;
+  /** default padding reset? */
 }
 
 .navbar li {
-  padding: 20px 10px;
+  padding: 20px 10px; /** kies je bewust voor px? waarom geen em of rem? */
 }
 
 .navbar li:hover {
@@ -78,6 +82,7 @@ body {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+   /** default padding reset? */
 }
 
 .ice li {
@@ -108,7 +113,7 @@ body {
 }
 
 .history-text h2{
-  font-family: "Handlee";
+  font-family: "Handlee"; /** font family gebruik je meerdere malen, mss een custom property van mk ? */
   margin: 20px 0;
   text-transform: capitalize;
 }
@@ -179,7 +184,7 @@ footer {
   height: 450px;
 }
 
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 767px) { /* mag ook zijn @media (max-width: 767px) { ... } */
   .main-header .fa-bars {
     display: block;
   }
