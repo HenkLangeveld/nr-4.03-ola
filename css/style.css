@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Handlee|Roboto&display=swap');
 
+:root {
+  --red: #f30501;
+  --green: #46a916;
+  --yellow: #fd0;
+
+}
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -49,7 +56,7 @@ body {
 }
 
 .navbar li:hover {
-  background: red;
+  background: var(--red);
   color: #fff;
 }
 
@@ -57,7 +64,7 @@ body {
 .showcase {
   background: url("https://asset-eu.unileversolutions.com/content/dam/unilever/heart/netherlands/general_image/walls_nl_header-1382974-jpg.jpg.ulenscale.960x240.jpg");
   height: 240px;
-  color: white;
+  color: #fff;
   display: flex;
   align-items: center;
 }
@@ -70,28 +77,28 @@ body {
 }
 
 /* Section Ice */
-.ice {
-  background: red;
+.products {
+  background: var(--red);
 }
 
-.ice ul {
+.products ul {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
 }
 
-.ice li {
+.products li {
   flex: 0 0 25%;
   /* fix om rode onderrand weg te werken */
   display: flex;
 }
 
-.ice li img {
+.products li img {
   width: 100%;
 }
 
 /* Section History */
-.history {
+/* .history {
   background: #46a916;
   color: #fff;
   display: flex;
@@ -104,7 +111,7 @@ body {
 }
 
 .history-text {
-  padding: 0 0 0 30px;
+  padding-left: 30px;
 }
 
 .history-text h2{
@@ -118,7 +125,37 @@ body {
   text-decoration: none;
   margin-top: 20px;
   font-size: 1.2rem;
+} */
+
+.history {
+  background: var(--green);
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 50px 20px;
+  height: 300px;
 }
+
+.history-image {
+  width: 50%;
+}
+
+.history h2 {
+  font-family: "Handlee";
+  padding-left: 30px;
+  width: 50%;
+}
+
+.history a {
+  color: #fff;
+  text-decoration: none;
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
 
 /* Section Explore */
 .explore {
