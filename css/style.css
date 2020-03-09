@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Handlee|Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Handlee|Roboto&display=swap");
 
 :root {
   --red: #f30501;
   --green: #46a916;
   --yellow: #fd0;
-
 }
 
 * {
@@ -45,7 +44,7 @@ body {
   font-size: 1.1875rem;
 }
 
-.navbar ul { 
+.navbar ul {
   display: flex;
   list-style: none;
   justify-content: space-between;
@@ -98,9 +97,14 @@ body {
 }
 
 /* Section History */
-/* .history {
+.history {
   background: #46a916;
   color: #fff;
+}
+
+.history-wrapper {
+  max-width: 1250px;
+  margin: auto;
   display: flex;
   align-items: center;
   padding: 50px 20px;
@@ -114,7 +118,7 @@ body {
   padding-left: 30px;
 }
 
-.history-text h2{
+.history-text h2 {
   font-family: "Handlee";
   margin: 20px 0;
   text-transform: capitalize;
@@ -125,9 +129,9 @@ body {
   text-decoration: none;
   margin-top: 20px;
   font-size: 1.2rem;
-} */
+}
 
-.history {
+/* .history {
   background: var(--green);
   color: #fff;
   display: flex;
@@ -154,8 +158,7 @@ body {
   text-decoration: none;
   margin-top: 20px;
   font-size: 1.2rem;
-}
-
+} */
 
 /* Section Explore */
 .explore {
@@ -186,7 +189,7 @@ body {
 
 .explore-picture h3 {
   color: #fff;
-  font-size: 2rem;;
+  font-size: 2rem;
   position: absolute;
   width: 100%;
   top: 45%;
